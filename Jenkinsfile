@@ -23,5 +23,13 @@ pipeline {
 				}
 			}
 		}
+		stage('Deploy') {
+			input {
+				message 'Deploy the application?'
+			}
+			steps {
+				echo 'Deploying...'
+			}
+		}
 	}
 }
